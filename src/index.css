@@ -1,0 +1,90 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	background-color: #232323;
+	color: #fff;
+}
+
+/*// colors
+// #565656 dark gray
+// #eec583 code yello
+// #74dbca code blue
+// #a3a3a3 light gray
+// #232323 black
+*/
+/* Header */
+header {
+	/*background-color: #74dbca;*/
+	background-color: #18bc9c;
+	color: #fff;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: normal;
+	margin: 0 0 30px 0;
+	font-size: 70px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.email {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.job-title p {
+	font-size: 30px;
+	margin: 0;
+}
+
+/*header links*/
+.links {
+	font-size: 2em;
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	display: grid;
+	grid-template-columns: 60px 60px 60px;
+	align-items: center;
+}
+
+.fa-free-code-camp {
+	background-color: #006400;
+	border-radius: 4px;
+	padding: 5px;
+}
+.fa-free-code-camp:hover {
+	background-color: #232323;
+	transition: .2s;
+}
+
+.fa-linkedin-in {
+	background-color: #006fa6;
+	border-radius: 4px;
+	padding: 5px;
+}
+.fa-linkedin-in:hover {
+	background-color: #232323;
+	transition: .2s;
+}
+.fa-github {
+	background-color: #24292e;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.fa-github:hover {
+	background-color: #232323;
+	transition: .2s;
+}
+
