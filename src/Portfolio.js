@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import './index.css';
 
+import Navbar from './Navbar';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -16,6 +17,7 @@ class Portfolio extends React.Component {
 	render() {
 		return (
 			<div>
+				<Navbar />
 				<Header />
 				<Footer />
 			</div>
