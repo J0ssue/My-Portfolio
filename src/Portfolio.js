@@ -3,6 +3,7 @@ import './index.css';
 
 import Navbar from './Navbar';
 import Header from './Header';
+import Projects from './Projects';
 import Footer from './Footer';
 
 
@@ -19,6 +20,7 @@ class Portfolio extends React.Component {
 			<div>
 				<Navbar />
 				<Header />
+				<Projects />
 				<Footer />
 			</div>
 		);

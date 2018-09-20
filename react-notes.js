@@ -607,13 +607,13 @@ class RenderInput extends React.Component {
 };
 
 // **** List of lifecycle methods:
-componentWillMount()
-componentDidMount()
-componentWillReceiveProps()
-shouldComponentUpdate()
-componentWillUpdate()
-componentDidUpdate()
-componentWillUnmount()
+// componentWillMount()
+// componentDidMount()
+// componentWillReceiveProps()
+// shouldComponentUpdate()
+// componentWillUpdate()
+// componentDidUpdate()
+// componentWillUnmount()
 
 // **** Use the Lifecycle method componentWillMount:
 
