@@ -1,12 +1,13 @@
 import React, {PropTypes} from 'react';
 import './index.css';
 
-import Navbar from './Navbar';
-import Header from './Header';
-import Projects from './Projects';
-import Footer from './Footer';
+import 'milligram';
 
-
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Projects from './components/Projects';
+import About from './components/About';
+import Footer from './components/Footer';
 
 // Portfolio Stateful component
 class Portfolio extends React.Component {
@@ -21,6 +22,7 @@ class Portfolio extends React.Component {
 				<Navbar />
 				<Header />
 				<Projects />
+				<About />
 				<Footer />
 			</div>
 		);

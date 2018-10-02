@@ -1,5 +1,5 @@
 import React from 'react';
-import Name from './Header/Name';
+import Name from './Name';
 
 const Header = () => {
 	return (
