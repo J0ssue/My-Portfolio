@@ -9,3 +9,14 @@ For each piece of state in your application:
 -Either the common owner or another component higher up in the hierarchy should own the state.
 
 -If you can’t find a component where it makes sense to own the state, create a new component simply for holding the state and add it somewhere in the hierarchy above the common owner component.
+
+{
+	TODOS
+
+	- fix CSS in all components
+	- it should send messages to your phone from contact module using twillio
+	- it should show a different content after message has been sent from contact component
+	- it should have a button to scroll to top
+	- it should have a logo
+	- it should fetch projects info from github api
+}
