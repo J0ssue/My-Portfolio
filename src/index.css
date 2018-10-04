@@ -6,6 +6,9 @@ body {
 	color: #fff;
 }
 
+h1, h2 {
+	text-transform: uppercase;
+}
 /*// colors
 // #565656 dark gray
 // #eec583 code yello
@@ -210,6 +213,7 @@ a {
 	margin-top: 0;
 	padding-top: 20px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 /* Contact Section */
@@ -223,3 +227,4 @@ a {
 	padding-top: 20px;
 	text-align: center;
 }
+
