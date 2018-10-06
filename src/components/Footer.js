@@ -33,7 +33,7 @@ const Footer = props => {
 					</p>
 				</div>	
 			</div>
-			<p>Copyright &copy; Josue Diaz, {date.getUTCFullYear()}</p>
+			<p className="copyright">Copyright &copy; Josue Diaz, {date.getUTCFullYear()}</p>
 		</footer>
 	);
 };

@@ -1,14 +1,46 @@
-import React from 'react';
-import Name from './Name';
+import React, { Component } from 'react';
 
-const Header = () => {
+class Header extends Component {
+	render() {
+		return (
+			<header id="header">
+				<div>
+					<Name />
+				</div>
+			</header>
+		);
+	}
+};
+
+const Name = () => { 
 	return (
-		<header id="header">
-			<div>
-				<Name />
+		<div>
+			<h1 className="animated flipInY">Josue Diaz</h1>
+			<div className="email">
+				<em><a href="">jdiaz66@icloud.com</a></em>
 			</div>
-		</header>
+			<div className="cv">
+				Here's my <a href="https://j0ssue.github.io/frontend-nanodegree-resume/" target="_blank">cv</a>
+			</div>
+			<div>
+				<ul className="links">
+				<li>
+					<a href="https://www.freecodecamp.org/j0ssue" target="_blank" className="fab fa-free-code-camp"></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/josue-diaz-67648a159/" target="_blank" className="fab fa-linkedin-in"></a>
+				</li>
+				<li>
+					<a href="https://github.com/J0ssue" target="_blank" className="fab fa-github"></a>
+				</li>
+			</ul>
+			</div>
+			<div className="job-title">
+				<p>Web Developer</p>
+			</div>
+		</div>
 	);
-}
+};
+
 
 export default Header;

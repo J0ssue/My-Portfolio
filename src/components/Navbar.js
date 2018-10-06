@@ -49,22 +49,22 @@ class Navbar extends Component  {
 				<div id="dropdown">
 					<ul>
 						<li>
-							<a href="">About</a>
+							<a href="#about">About</a>
 						</li>	
 						<li>
-							<a href="">Portfolio</a>
+							<a href="#portfolio">Portfolio</a>
 						</li>
 						<li>
-							<a href="">Contact</a>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
 				) : ( null )
 				}
 				<div id="menu">
-					<a href="">About</a>
-					<a href="">Portfolio</a>
-					<a href="">Contact</a>
+					<a href="#about">About</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#contact">Contact</a>
 				</div>
 			</nav>
 		);

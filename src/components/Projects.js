@@ -25,7 +25,7 @@ const projects = {
 class Projects extends React.Component {
 	render() {
 		return (
-			<section id="projects">
+			<section id="portfolio">
 				<h1>Projects</h1>
 				<ProjectContainer />
 			</section>

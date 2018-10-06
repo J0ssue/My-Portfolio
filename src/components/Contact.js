@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const Form = () => {
 	return (
-		<form action="">
+		<form action="" id="contact">
 			<div>
 				<label htmlFor="name">Name</label>
 				<input type="text"/>
@@ -26,7 +26,7 @@ const Form = () => {
 	);
 };
 
-class Contact extends React.Component {
+class Contact extends Component {
 	render() {
 		return (
 			<section id="contact">
