@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import './index.css';
 
 // Milligram CSS framework
@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 // Portfolio Stateful component
-class Portfolio extends React.Component {
+class Portfolio extends Component {
 	constructor(props) {
 		super(props);
 	}
