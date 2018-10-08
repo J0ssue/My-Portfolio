@@ -4,32 +4,8 @@ class Navbar extends Component  {
 	constructor() {
 		super();
 
-		this.state = {
-			showMenu: false,
-		};
-
-		this.showMenu = this.showMenu.bind(this);
-		this.closeMenu = this.closeMenu.bind(this);
 	}
 
-	showMenu(event) {
-		event.preventDefault();
-		this.setState({showMenu: true,}, () => {
-			document.addEventListener('click', this.closeMenu);
-		});
-
-		if (this.state.showMenu === true) {
-			this.setState({
-				showMenu: false,
-			});
-		}
-	}
-
-	closeMenu(event) {
-		this.setState({showMenu: false}, () => {
-				document.removeEventListener('click', this.closeMenu);
-			});
-	}
 	render() {
 		return (
 			<nav id="navbar">
@@ -38,14 +14,14 @@ class Navbar extends Component  {
 						<a href="#header">Josue</a>	
 					</div>
 					<div id="menu-btn">
-						<button onClick={this.showMenu}>
+						<button onClick={this.props.showMenu}>
 							Menu
 							<i className="fas fa-bars"></i>
 						</button>
 					</div>
 				</div>
 				{
-				this.state.showMenu ? (
+				this.props.getMenuState ? (
 				<div id="dropdown">
 					<ul>
 						<li>
