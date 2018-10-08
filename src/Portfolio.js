@@ -57,14 +57,12 @@ class Portfolio extends Component {
 	}
 
 	// handles the scroll for the button to go back to top of page
-	
 	handleScroll(e) {
 		if (window.pageYOffset > 20) {
 			document.querySelector('#page-top').style.display = 'block';
 		} else {
 			document.querySelector('#page-top').style.display = 'none';
 		}
-		console.log(e.target);
 	}
 
 	// handles click for button to scroll to top

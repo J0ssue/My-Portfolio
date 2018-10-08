@@ -7,10 +7,11 @@ class BackToTop extends Component {
 
 	render() {
 		return (
-			<button 
+			<i 
 				id="page-top"
 				onClick={this.props.backToTop}
-			>up</button>	
+				class="far fa-caret-square-up">
+				</i>
 		);
 	}
 }
