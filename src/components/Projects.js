@@ -11,12 +11,12 @@ const projects = {
 		url: 'https://github.com/J0ssue/Memory-Card-Game',
 	},
 	techDocs: {
-		title: 'ES6 Technical Documentation',
+		title: 'Landing Page',
 		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ipsum.',
 		url: 'https://j0ssue.github.io/fcc-technical-docs-page/',
 	},
 	landing: {
-		title: 'Landing Page',
+		title: 'ES6 Technical Documentation',
 		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, doloribus.',
 		url: 'https://j0ssue.github.io/fcc-product-landing-page/',
 	}

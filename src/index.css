@@ -247,14 +247,14 @@ div.project:nth-of-type(2) {
 }
 
 .project .button {
-	background-color: #74dbca;
+	background-color: #18bc9c;
 	border: 0;
 }
 
 /* About Section */
 #about {
 	color: #fff;
-	background-color: #74dbca;
+	background-color: #18bc9c;
 	padding-right: 20px; 
 	padding-left: 20px;
 	padding-bottom: 20px;
@@ -280,7 +280,13 @@ div.project:nth-of-type(2) {
 }
 
 #contact button {
+	background-color: #18bc9c;
+	border: none;
 	width: 100%;
+}
+
+#contact button:hover {
+	background-color: #333;
 }
 
 /* Footer */
