@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
 
 import memoryImg from '../img/project1.png';
-import techDocsImg from '../img/landing-pg.png';
-import landingImg from '../img/tech-docs.png';
+import  landingImg from '../img/landing-pg.png';
+import techDocsImg from '../img/tech-docs.png';
+import surveyImg from '../img/survey-form.png';
+import githubProf from '../img/github-profile.png';
 
 const projects = {
 	cardGame: {
 		title: 'Memory Card Game',
 		desc: 'The goal is to match every card with it\'s corresponding match. Click thorugh each card on the deck and find its match by clicking on another card.',
 		url: 'https://github.com/J0ssue/Memory-Card-Game',
+		live: 'https://j0ssue.github.io/Memory-Card-Game/'
 	},
 	techDocs: {
-		title: 'Landing Page',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ipsum.',
-		url: 'https://j0ssue.github.io/fcc-technical-docs-page/',
+		title: 'ES6 Technical Documentation',
+		desc: 'This technical documentation project holds JavaScript ES6 documentation. HTML rendered with JavaScript using MVC.',
+		url: 'https://github.com/J0ssue/fcc-technical-docs-page',
+		live: 'https://j0ssue.github.io/fcc-technical-docs-page/'
 	},
 	landing: {
-		title: 'ES6 Technical Documentation',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, doloribus.',
-		url: 'https://j0ssue.github.io/fcc-product-landing-page/',
-	}
+		title: 'Landing Page',
+		desc: 'This landing page displays a programming course business landing page. To render the information on each section I used the most basic idea of MVC to practice this technique of organizing code.',
+		url: 'https://github.com/J0ssue/fcc-product-landing-page',
+		live: 'https://j0ssue.github.io/fcc-product-landing-page/'
+	},
+	githubProf: {
+		title: 'Github Profile',
+		desc: 'In this small project I use the github API to fetch information about my personal profile and display it onto the DOM.',
+		url: 'https://github.com/J0ssue/github_profile',
+		live: ' https://j0ssue.github.io/github_profile/'
+	},
+	survey: {
+		title: 'Survey Form',
+		desc: 'This is FreeCodeCamp\'s survey form project for the Responsive Web Design Projects.It includes index.html, style.css, background.jpg, app.js, helper.js.',
+		url: 'https://github.com/J0ssue/fcc-survey-form',
+		live: 'https://j0ssue.github.io/fcc-survey-form/'
+	}	
 };
 
 class Projects extends React.Component {
@@ -39,6 +56,7 @@ const ProjectContainer = () => {
 			<Project 
 				title={projects.cardGame.title} 
 				desc={projects.cardGame.desc} 
+				live={projects.cardGame.live} 
 				url={projects.cardGame.url} 
 				img={memoryImg}
 			/>
@@ -46,14 +64,30 @@ const ProjectContainer = () => {
 			<Project 
 				title={projects.techDocs.title} 
 				desc={projects.techDocs.desc} 
+				live={projects.techDocs.live} 
 				url={projects.techDocs.url} 
 				img={techDocsImg}
 			/>
 			<Project 
 				title={projects.landing.title} 
 				desc={projects.landing.desc} 
+				live={projects.landing.live} 
 				url={projects.landing.url} 
 				img={landingImg}
+			/>
+			<Project 
+				title={projects.githubProf.title} 
+				desc={projects.githubProf.desc} 
+				live={projects.githubProf.live} 
+				url={projects.githubProf.url} 
+				img={githubProf}
+			/>
+			<Project 
+				title={projects.survey.title} 
+				desc={projects.survey.desc} 
+				live={projects.survey.live} 
+				url={projects.survey.url} 
+				img={surveyImg}
 			/>
 		</div>
 	);
@@ -64,7 +98,7 @@ const Project = (props) => {
 		<div className="project">
 			<h3>{props.title}</h3>
 			<img src={props.img} />
-			<p>{props.desc} here's also a link to my project on github <br/> <em><a href={props.url} target="_blank" className="button">github code</a></em></p>
+			<p>{props.desc}<br/> <em><a href={props.url} target="_blank" className="button">github</a> <a href={props.live} className="button" target="_blank">live</a></em></p>
 		</div>
 	);
 };
