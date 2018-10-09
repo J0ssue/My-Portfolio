@@ -5,14 +5,14 @@ const date = new Date();
 const Footer = props => {
 	return (
 		<footer id="footer">
-			<div className="container">
-				<div className="address">
+			<div className="row">
+				<div className="address column">
 					<h2>LOCATION</h2>	
 					<address>
 						Carregado, Portugal
 					</address>
 				</div>	
-				<div className="social">
+				<div className="social column">
 					<h2>AROUND THE WEB</h2>	
 					<ul>
 						<li>
@@ -26,7 +26,7 @@ const Footer = props => {
 						</li>
 					</ul>
 				</div>	
-				<div className="about">
+				<div className="about column">
 					<h2>about developer</h2>	
 					<p>
 						Please feel free to contact me for any freelancing work, or hiring purposes. Here's a copy of my <a href="#">CV</a> and <a href="">github</a>. 

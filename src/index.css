@@ -200,6 +200,10 @@ header a {
 		font-size: 55px;
 		padding-top: 88px;
 	}
+
+	header .row {
+		width: 100%;
+	}
 }
 
 
@@ -227,10 +231,16 @@ header a {
 	border-radius: 2px;
 }
 
+.project p {
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .project {
 	box-sizing: border-box;
 	text-align: center;
-	width: 270px;
+	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
@@ -262,6 +272,35 @@ div.project:nth-of-type(4) {
 .project .button {
 	background-color: #18bc9c;
 	border: 0;
+}
+
+@media (min-width: 634px) {
+	#project-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}	
+
+	div.project:nth-of-type(2) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	div.project:nth-of-type(4) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#portfolio .project {
+		height: 270px;
+		margin: 10px;
+	}
+
+	#portfolio .project p {
+		display: none;
+	}
+
 }
 
 /* About Section */
@@ -345,6 +384,19 @@ div.project:nth-of-type(4) {
 	height: 35px;
 	margin-bottom: 0;
 	overflow: hidden;
+}
+
+@media (min-width: 634px) {
+	#footer .row {
+		width: 100%;
+	}
+
+	#footer .address,
+	#footer .about,
+	#footer .social {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
 }
 
 /* To top button */

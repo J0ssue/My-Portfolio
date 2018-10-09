@@ -10,7 +10,7 @@ class BackToTop extends Component {
 			<i 
 				id="page-top"
 				onClick={this.props.backToTop}
-				class="far fa-caret-square-up">
+				className="far fa-caret-square-up">
 				</i>
 		);
 	}

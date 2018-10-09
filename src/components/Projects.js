@@ -59,44 +59,44 @@ class Projects extends React.Component {
 
 const ProjectContainer = () => {
 	return (
-		<div>
-			<Project 
-				title={projects.cardGame.title} 
-				desc={projects.cardGame.desc} 
-				live={projects.cardGame.live} 
-				url={projects.cardGame.url} 
-				img={memoryImg}
-			/>
+		<div id="project-container">
+				<Project 
+					title={projects.cardGame.title} 
+					desc={projects.cardGame.desc} 
+					live={projects.cardGame.live} 
+					url={projects.cardGame.url} 
+					img={memoryImg}
+				/>
 
-			<Project 
-				title={projects.techDocs.title} 
-				desc={projects.techDocs.desc} 
-				live={projects.techDocs.live} 
-				url={projects.techDocs.url} 
-				img={techDocsImg}
-			/>
-			<Project 
-				title={projects.landing.title} 
-				desc={projects.landing.desc} 
-				live={projects.landing.live} 
-				url={projects.landing.url} 
-				img={landingImg}
-			/>
-			<Project 
-				title={projects.githubProf.title} 
-				desc={projects.githubProf.desc} 
-				live={projects.githubProf.live} 
-				url={projects.githubProf.url} 
-				img={githubProf}
-			/>
-			<Project 
-				title={projects.survey.title} 
-				desc={projects.survey.desc} 
-				live={projects.survey.live} 
-				url={projects.survey.url} 
-				img={surveyImg}
-			/>
-		</div>
+				<Project 
+					title={projects.techDocs.title} 
+					desc={projects.techDocs.desc} 
+					live={projects.techDocs.live} 
+					url={projects.techDocs.url} 
+					img={techDocsImg}
+				/>
+				<Project 
+					title={projects.landing.title} 
+					desc={projects.landing.desc} 
+					live={projects.landing.live} 
+					url={projects.landing.url} 
+					img={landingImg}
+				/>
+				<Project 
+					title={projects.githubProf.title} 
+					desc={projects.githubProf.desc} 
+					live={projects.githubProf.live} 
+					url={projects.githubProf.url} 
+					img={githubProf}
+				/>
+				<Project 
+					title={projects.survey.title} 
+					desc={projects.survey.desc} 
+					live={projects.survey.live} 
+					url={projects.survey.url} 
+					img={surveyImg}
+				/>
+		</div>	
 	);
 };
 
@@ -105,7 +105,10 @@ const Project = (props) => {
 		<div className="project">
 			<h3>{props.title}</h3>
 			<img src={props.img} />
-			<p>{props.desc}<br/> <em><a href={props.url} target="_blank" className="button">github</a> <a href={props.live} className="button" target="_blank">live</a></em></p>
+			<p>{props.desc}</p>
+			<div className="btns">
+				<em><a href={props.url} target="_blank" className="button">github</a> <a href={props.live} className="button" target="_blank">live</a></em>
+			</div>
 		</div>
 	);
 };
