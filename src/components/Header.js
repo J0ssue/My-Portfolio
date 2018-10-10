@@ -18,7 +18,7 @@ const Name = () => {
 			</div>
 			<div className="column">
 				<div className="email">
-					<em><a href="">jdiaz66@icloud.com</a></em>
+					<em><a href="mailto:jdiaz66@icloud.com">jdiaz66@icloud.com</a></em>
 				</div>
 				<div className="cv">
 					Here's my <a href="https://j0ssue.github.io/frontend-nanodegree-resume/" target="_blank">cv</a>
