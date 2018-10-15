@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BackToTop extends Component {
-	constructor() {
-		super();
-	}
-
-	render() {
-		return (
+const BackToTop = props => {
+	return (
 			<i 
 				id="page-top"
-				onClick={this.props.backToTop}
+				onClick={props.backToTop}
 				className="far fa-caret-square-up">
-				</i>
-		);
-	}
+			</i>
+	);
 }
 
 export default BackToTop;

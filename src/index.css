@@ -10,16 +10,12 @@ body {
 h1, h2 {
 	text-transform: uppercase;
 }
-/*// colors
-// #565656 dark gray
-// #eec583 code yello
-// #74dbca code blue
-// #a3a3a3 light gray
-// #232323 black 	
-*/
-/*****  Navbar *****/
-/* Small Screen navbar styles */
 
+/*************************** 
+				Navbar Section
+***************************/
+
+/* Small Screen navbar styles */
 #navbar a {
 	color: #ddd;
 }
@@ -104,9 +100,10 @@ h1, h2 {
 	}
 }
 
-/***** Header *****/
+/*************************** 
+				Header Section
+***************************/
 header {
-	/*background-color: #74dbca;*/
 	background-color: #18bc9c;
 	color: #fff;
 	text-align: center;
@@ -206,9 +203,9 @@ header a {
 	}
 }
 
-
-/* Projects Section */
-
+/*************************** 
+				Portfolio Section
+***************************/
 #portfolio {
 	background-color: #fff;
 	padding-left: 20px;
@@ -303,7 +300,9 @@ div.project:nth-of-type(4) {
 
 }
 
-/* About Section */
+/*************************** 
+				About Section
+***************************/
 #about {
 	color: #fff;
 	background-color: #18bc9c;
@@ -319,7 +318,15 @@ div.project:nth-of-type(4) {
 	text-transform: uppercase;
 }
 
-/* Contact Section */
+.about-pic {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%
+}
+
+/*************************** 
+				Contact Section	
+***************************/
 #contact {
 	background-color: #fff;
 	padding: 20px;
@@ -341,7 +348,9 @@ div.project:nth-of-type(4) {
 	background-color: #333;
 }
 
-/* Footer */
+/*************************** 
+					Footer 
+***************************/
 
 #footer {
 	padding-top: 10px;
@@ -390,16 +399,11 @@ div.project:nth-of-type(4) {
 	#footer .row {
 		width: 100%;
 	}
-
-	#footer .address,
-	#footer .about,
-	#footer .social {
-		margin-top: auto;
-		margin-bottom: auto;
-	}
 }
 
-/* To top button */
+/*************************** 
+				To Top Button
+***************************/
 
 #page-top {
 	display: none;

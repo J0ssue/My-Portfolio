@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import memoryImg from '../img/project1.png';
-import  landingImg from '../img/landing-pg.png';
+import landingImg from '../img/landing-pg.png';
 import techDocsImg from '../img/tech-docs.png';
 import surveyImg from '../img/survey-form.png';
 import githubProf from '../img/github-profile.png';

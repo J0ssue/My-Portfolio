@@ -2,7 +2,7 @@ import React from 'react'
 
 const date = new Date();
 
-const Footer = props => {
+const Footer = () => {
 	return (
 		<footer id="footer">
 			<div className="row">
@@ -12,6 +12,12 @@ const Footer = props => {
 						Carregado, Portugal
 					</address>
 				</div>	
+				<div className="about column">
+					<h2>about developer</h2>	
+					<p>
+						Please feel free to contact me for any freelancing work, or hiring purposes. Here's a copy of my <a href="#">CV</a> and <a href="">github</a>. 
+					</p>
+				</div>
 				<div className="social column">
 					<h2>AROUND THE WEB</h2>	
 					<ul>
@@ -25,12 +31,6 @@ const Footer = props => {
 							<a href="https://github.com/J0ssue" target="_blank" className="fab fa-github"></a>
 						</li>
 					</ul>
-				</div>	
-				<div className="about column">
-					<h2>about developer</h2>	
-					<p>
-						Please feel free to contact me for any freelancing work, or hiring purposes. Here's a copy of my <a href="#">CV</a> and <a href="">github</a>. 
-					</p>
 				</div>	
 			</div>
 			<p className="copyright">Copyright &copy; Josue Diaz, {date.getUTCFullYear()}</p>

@@ -25,14 +25,8 @@ class Portfolio extends Component {
 		this.closeMenu = this.closeMenu.bind(this);
 		this.backToTop = this.backToTop.bind(this);
 		this.handleScroll = this.handleScroll.bind(this);
-	}
 
-	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener('scroll', this.handleScroll);
 	}
 
 	// opens barnav menu
