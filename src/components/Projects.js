@@ -118,7 +118,7 @@ const Project = (props) => {
 	return (
 		<div className="project">
 			<h3>{props.title}</h3>
-			<img src={props.img} />
+			<img src={props.img} alt="project-img" />
 			<div className="icons-container">
 				{props.icons.map((icon, index) => {
 					return (

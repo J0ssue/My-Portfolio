@@ -302,7 +302,8 @@ div.project:nth-of-type(4) {
 	}
 
 	#portfolio .project {
-		height: 270px;
+		box-sizing: border-box;
+		height: 320px;
 		margin: 10px;
 	}
 
