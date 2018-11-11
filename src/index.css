@@ -327,11 +327,17 @@ div.project:nth-of-type(4) {
 	text-transform: uppercase;
 }
 
+#about .container {
+	font-size: 1.7rem;	
+}
+
 .about-pic {
-	height: 100px;
-	width: 100px;
+	height: 200px;
+	width: 200px;
 	border-radius: 50%
 }
+
+
 
 /*************************** 
 				Contact Section	
