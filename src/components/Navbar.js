@@ -6,7 +6,7 @@ class Navbar extends Component  {
 			<nav id="navbar">
 				<div className="nav-container">
 					<div id="nav-brand">
-						<a href="#header">Josue</a>	
+						 <a href="#header">[ <i className="fab fa-react"></i><i className="fab fa-js-square"></i><i className="fab fa-html5"></i><i className="fab fa-css3"></i><i className="fab fa-github-alt"></i>] JDiaz<i className="fas fa-code"></i></a>	
 					</div>
 					<div id="menu-btn">
 						<button onClick={this.props.showMenu}>

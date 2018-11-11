@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import memoryImg from '../img/project1.png';
 import landingImg from '../img/landing-pg.png';
 import techDocsImg from '../img/tech-docs.png';
@@ -50,50 +50,79 @@ const projects = {
 
 };
 
-class Projects extends React.Component {
+class Projects extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {hidden: true};
+		this.handleClick = this.handleClick.bind(this);
+		this.toggleProjects = this.toggleProjects.bind(this);
+	}
+	
+	handleClick() {
+		this.state.hidden ? this.setState({hidden: false}) : this.setState({hidden: true});
+		this.toggleProjects();
+	}
+
+	toggleProjects() {
+		const hiddenProjects = document.querySelector('#hidden-projects');
+		if (this.state.hidden) {
+			hiddenProjects.className = 'show-more-projects';
+		} else {
+			hiddenProjects.className = 'hide-more-projects';
+		}
+	}
+
 	render() {
 		return (
 			<section id="portfolio">
 				<h1>Projects</h1>
-				<ProjectContainer />
+				<ProjectContainer onClick={this.handleClick} />
 			</section>
 		);
 	}
 }
 
-const ProjectContainer = () => {
+const ProjectContainer = (props) => {
 	const cardGameIcons = projects.cardGame.icons;
 	const techDocsIcons = projects.techDocs.icons;
 	const landingIcons = projects.landing.icons;
 	const githubProfIcons = projects.githubProf.icons;
 	const surveyIcons = projects.survey.icons;
+	
 	return (
-		<div id="project-container">
-				<Project 
-					title={projects.cardGame.title} 
-					desc={projects.cardGame.desc} 
-					live={projects.cardGame.live} 
-					url={projects.cardGame.url} 
-					img={memoryImg}
-					icons={cardGameIcons}
-				/>
+		<div>
+			<div id="project-container">
+					<Project 
+						title={projects.cardGame.title} 
+						desc={projects.cardGame.desc} 
+						live={projects.cardGame.live} 
+						url={projects.cardGame.url} 
+						img={memoryImg}
+						icons={cardGameIcons}
+					/>
 
-				<Project 
-					title={projects.techDocs.title} 
-					desc={projects.techDocs.desc} 
-					live={projects.techDocs.live} 
-					url={projects.techDocs.url} 
-					img={techDocsImg}
-					icons={techDocsIcons}
-				/>
-				<Project 
-					title={projects.landing.title} 
-					desc={projects.landing.desc} 
-					live={projects.landing.live} 
-					url={projects.landing.url} 
-					img={landingImg}
-					icons={landingIcons}
-				/>
+					<Project 
+						title={projects.techDocs.title} 
+						desc={projects.techDocs.desc} 
+						live={projects.techDocs.live} 
+						url={projects.techDocs.url} 
+						img={techDocsImg}
+						icons={techDocsIcons}
+					/>
+					<Project 
+						title={projects.landing.title} 
+						desc={projects.landing.desc} 
+						live={projects.landing.live} 
+						url={projects.landing.url} 
+						img={landingImg}
+						icons={landingIcons}
+					/>
+
+			</div>	
+			<div className="container">
+				<button id="btn-show" onClick={props.onClick}>[ + ] show more</button>
+			</div>
+			<div id="hidden-projects" className="hide-more-projects">
 				<Project 
 					title={projects.githubProf.title} 
 					desc={projects.githubProf.desc} 
@@ -109,8 +138,9 @@ const ProjectContainer = () => {
 					url={projects.survey.url} 
 					img={surveyImg}
 					icons={surveyIcons}
-				/>
-		</div>	
+				/>	
+			</div>
+		</div>
 	);
 };
 

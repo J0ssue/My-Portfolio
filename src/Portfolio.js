@@ -8,8 +8,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import ContactFooter from './components/ContactFooter';
 import BackToTop from './components/BackToTop';
 
 // Portfolio Stateful component
@@ -76,8 +75,7 @@ class Portfolio extends Component {
 				<Header />
 				<Projects />
 				<About />
-				<Contact />
-				<Footer />
+				<ContactFooter />
 				<BackToTop 
 					backToTop={this.backToTop}
 				/>
