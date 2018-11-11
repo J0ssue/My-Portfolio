@@ -120,7 +120,7 @@ const ProjectContainer = (props) => {
 
 			</div>	
 			<div className="container">
-				<button id="btn-show" onClick={props.onClick}>[ + ] show more</button>
+				<button id="btn-show" className="button-glow" onClick={props.onClick}>[ + ] show more</button>
 			</div>
 			<div id="hidden-projects" className="hide-more-projects">
 				<Project 
