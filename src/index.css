@@ -247,6 +247,7 @@ header a {
 	border: 2px solid var(--yellow);
 	border-radius: 5px;
 	box-shadow: 3px 3px 5px 3px #ccc;
+	transition: all 0.5s ease;
 }
 
 .project:hover {
@@ -297,12 +298,20 @@ div.project:nth-of-type(4) {
 	background-color: black;
 }
 
+
+
 .show-more-projects {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .hide-more-projects {
 	display: none;
+}
+
+#projects-content .show-more-container {
+	margin-top: 60px;
+	margin-bottom: 40px;
 }
 
 #btn-show {

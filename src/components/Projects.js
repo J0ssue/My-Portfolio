@@ -10,7 +10,6 @@ const projects = {
 
 	cardGame: {
 		title: 'Memory Card Game',
-		desc: 'The goal is to match every card with it\'s corresponding match. Click thorugh each card on the deck and find its match by clicking on another card.',
 		url: 'https://github.com/J0ssue/Memory-Card-Game',
 		live: 'https://j0ssue.github.io/Memory-Card-Game/',
 		icons: ['fab fa-js', 'fab fa-html5', 'fab fa-css3-alt']
@@ -18,7 +17,6 @@ const projects = {
 
 	techDocs: {
 		title: 'ES6 Technical Documentation',
-		desc: 'This technical documentation project holds JavaScript ES6 documentation. HTML rendered with JavaScript using MVC.',
 		url: 'https://github.com/J0ssue/fcc-technical-docs-page',
 		live: 'https://j0ssue.github.io/fcc-technical-docs-page/',
 		icons: ['fab fa-js', 'fab fa-html5', 'fab fa-css3-alt'],
@@ -26,7 +24,6 @@ const projects = {
 
 	landing: {
 		title: 'Landing Page',
-		desc: 'This landing page displays a programming course business landing page. To render the information on each section I used the most basic idea of MVC to practice this technique of organizing code.',
 		url: 'https://github.com/J0ssue/fcc-product-landing-page',
 		live: 'https://j0ssue.github.io/fcc-product-landing-page/',
 		icons: ['fab fa-js', 'fab fa-html5', 'fab fa-css3-alt'],
@@ -34,7 +31,6 @@ const projects = {
 
 	githubProf: {
 		title: 'Github Profile',
-		desc: 'In this small project I use the github API to fetch information about my personal profile and display it onto the DOM.',
 		url: 'https://github.com/J0ssue/github_profile',
 		live: ' https://j0ssue.github.io/github_profile/',
 		icons: ['fab fa-js', 'fab fa-html5', 'fab fa-css3-alt'],
@@ -42,7 +38,6 @@ const projects = {
 
 	survey: {
 		title: 'Survey Form',
-		desc: 'This is FreeCodeCamp\'s survey form project for the Responsive Web Design Projects.It includes index.html, style.css, background.jpg, app.js, helper.js.',
 		url: 'https://github.com/J0ssue/fcc-survey-form',
 		live: 'https://j0ssue.github.io/fcc-survey-form/',
 		icons: ['fab fa-js', 'fab fa-html5', 'fab fa-css3-alt'],
@@ -90,7 +85,7 @@ const ProjectContainer = (props) => {
 	const surveyIcons = projects.survey.icons;
 	
 	return (
-		<div>
+		<div id="projects-content">
 			<div id="project-container">
 					<Project 
 						title={projects.cardGame.title} 
@@ -119,7 +114,7 @@ const ProjectContainer = (props) => {
 					/>
 
 			</div>	
-			<div className="container">
+			<div className="container show-more-container">
 				<button id="btn-show" className="button-glow" onClick={props.onClick}>[ + ] show more</button>
 			</div>
 			<div id="hidden-projects" className="hide-more-projects">
