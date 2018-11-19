@@ -10,9 +10,17 @@ const About = () => {
 				<div className="row">
 					<div className="column column-40">
 							<img src={me} alt="my pic" className="about-pic"/>
-								<em><b>Hi. I'm Josue Diaz, a Front End Software Developer based in Portugal. Please take a look around!</b></em>
+							<p>
+								<b>
+									Web Developer
+								 <i className="fas fa-code"></i>
+								</b>
+							</p>
 					</div>
 					<div classsname="column">
+						<p>
+									<em><b>Hi. I'm Josue Diaz, a Front End Software Developer based in Portugal. Please take a look around!</b></em>
+						</p>
 						<p>
 							I am passionate about building excellent software that improves the lives of those around me. I specialize in <em><b>React, Bootstrap, Milligramm, JavaScript, HTML, and CSS.</b></em> I have over 1 year experience building projects on my own and have been teaching myself how to program on my free time.
 						</p>

@@ -386,11 +386,21 @@ div.project:nth-of-type(4) {
 }
 
 .about-pic {
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%
 }
 
+#about .about-pic + p {
+	color: #000;
+}
+
+@media (min-width: 634px) {
+	#about .about-pic {
+		height: 200px;
+		width: 200px;
+	}
+}
 /*************************** 
 					Footer 
 ***************************/
