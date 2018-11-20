@@ -1,8 +1,6 @@
 import React from 'react'
 
 const ContactFooter = () => {
-	const date = new Date();
-
 	return (
 		<section id="contact">
 			<div>
@@ -37,7 +35,6 @@ const ContactFooter = () => {
 					</ul>
 				</div>	
 			</div>
-			<footer className="copyright">Copyright &copy; Josue Diaz, {date.getUTCFullYear()}</footer>
 		</section>
 	);
 };

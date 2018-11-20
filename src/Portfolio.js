@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import ContactFooter from './components/ContactFooter';
 import BackToTop from './components/BackToTop';
+import Footer from './components/Footer';
 
 // Portfolio Stateful component
 class Portfolio extends Component {
@@ -79,6 +80,7 @@ class Portfolio extends Component {
 				<BackToTop 
 					backToTop={this.backToTop}
 				/>
+				<Footer />
 			</div>
 		);
 	}
