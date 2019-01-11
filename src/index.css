@@ -290,9 +290,6 @@ div.project:nth-of-type(4) {
 }
 
 .project .button {
-	width: 100px;
-	height: 40px;
-	font-size: 17px;
 	background-color: var(--main-blue);
 	border: 0;
 	transition: all 0.5s ease;
