@@ -292,7 +292,7 @@ div.project:nth-of-type(4) {
 .project .button {
 	width: 100px;
 	height: 40px;
-	font-size: 10px;
+	font-size: 17px;
 	background-color: var(--main-blue);
 	border: 0;
 	transition: all 0.5s ease;
@@ -321,8 +321,6 @@ div.project:nth-of-type(4) {
 #btn-show {
 	margin-top: 100px;
 	margin-bottom: 100px;
-	width: 100px;
-	height: 50px;
 	background-color: black;
 	border: none;
 	transition: all 0.5s ease;
